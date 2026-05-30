@@ -1,0 +1,11 @@
+{
+    "version": "1.0.0",
+    "name": "qua2mal",
+    "description": "将Quaver的谱转为Malody格式的神秘小工具",
+    "author": "A439",
+    "parameters": {
+        "input": "Quaver",
+        "--output": "Malody",
+        "--offset": 32
+    }
+}

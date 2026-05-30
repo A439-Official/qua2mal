@@ -3,6 +3,7 @@
     "name": "qua2mal",
     "description": "将Quaver的谱转为Malody格式的神秘小工具",
     "author": "A439",
+    "run": "main.exe",
     "parameters": {
         "input": "Quaver",
         "--output": "Malody",

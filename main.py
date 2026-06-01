@@ -47,7 +47,7 @@ def convert_time(ms, chart, offset=0):
 
 
 def get_bpm(chart, time):
-    last = 60
+    last = chart["time"][0]["bpm"]
     for t in chart["time"]:
         if t["origin"] > time:
             break

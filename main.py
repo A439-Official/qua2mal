@@ -148,7 +148,7 @@ def process_qua(zf, qua_file, offset):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("input")
+    parser.add_argument("--input", required=True)
     parser.add_argument("--output")
     parser.add_argument("--offset", type=int, default=32)
     args = parser.parse_args()

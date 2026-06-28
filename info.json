@@ -4,9 +4,26 @@
     "description": "将Quaver的谱转为Malody格式的神秘小工具",
     "author": "A439",
     "run": "main.exe",
-    "parameters": {
-        "input": "Quaver",
-        "--output": "Malody",
-        "--offset": 32
-    }
+    "parameters": [
+        {
+            "argument": "input",
+            "name": "Quaver谱面文件",
+            "description": "输入的Quaver谱面文件路径",
+            "type": "path",
+            "required": true
+        },
+        {
+            "argument": "output",
+            "name": "输出文件",
+            "description": "生成的Malody谱面文件路径，留空则自动使用输入文件名",
+            "type": "path"
+        },
+        {
+            "argument": "offset",
+            "name": "谱面偏移",
+            "description": "附加的时间偏移（毫秒）",
+            "type": "integer",
+            "default": 32
+        }
+    ]
 }
